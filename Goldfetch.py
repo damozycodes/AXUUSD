@@ -4,7 +4,7 @@ from dukascopy_python.instruments import INSTRUMENT_FX_METALS_XAU_USD
 
 # Define the start and end dates
 # Note: Dukascopy data is in UTC
-start_time = datetime(2019, 2, 16)
+start_time = datetime(1990, 2, 16)
 end_time = datetime(2025, 11, 30)
 
 # Define the instrument (Gold/USD), interval (4 hour), and offer side (BID price)
@@ -25,4 +25,4 @@ df = dukascopy_python.fetch(
 print(df.head(10))
 
 # You can save the results to a file, for example, a CSV file
-df.to_csv("gold_data_XAUUSD_H4.csv")
+df.to_csv("XAUUSD_H4.csv")
